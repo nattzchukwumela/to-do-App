@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Peppins', sans-serif;
+}
+/*body {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*}*/
+.container {
+   width: 100%;
+   min-height: 100vh;
+   background: linear-gradient(135deg, #153677, #4e085f);
+   padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  background: #fff;
+  max-width: 540px;
+  margin:100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  /* overflow: scroll; */
+}
+#row-1 {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#row-1 img {
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+}
+#row-2 {
+  background: #888;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  border-radius: 10px 0 10px 0;
+}
+#input-box {
+  width: 70%;
+  height: 40px;
+  margin-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: none;
+}
+#row-2 img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+/* the style for the list elements */
+#task-container {
+  list-style: none;
+  margin-top: 30px;
+  background: pink;
+  overflow: scroll;
+  height: 150px;
+  padding: 10px;
+}
+#task-container li {
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  position: relative;
+}
+#task-container li:before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+#task-container li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+#task-container li.checked:before {
+  background-image: url(checked.png);
+}
+#task-container li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+#task-container li span:hover {
+  background: #edeef0;
+}
+#task-container li small {
+  position: absolute;
+  left: 230px;
+  right: 15px;
+  top: 10px;
+  bottom: 5px;
+}
