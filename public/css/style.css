@@ -82,7 +82,7 @@
   height: 28px;
   width: 28px;
   border-radius: 50%;
-  background-image: url(unchecked.png);
+  background-image: url('/public/img/icon/unchecked.png');
   background-size: cover;
   background-position: center;
   top: 12px;
@@ -93,7 +93,7 @@
   text-decoration: line-through;
 }
 #task-container li.checked:before {
-  background-image: url(checked.png);
+  background-image: url(/public/img/checked.png);
 }
 #task-container li span {
   position: absolute;
